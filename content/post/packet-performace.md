@@ -62,7 +62,14 @@ In Grafana, for each defined benchmark, we've setup a templated dashboard:
 so we can easily select that branch and compare it with whatever other branch, the branch itself is
 found by using the recording rule from above in the template.
 
+And to get each benchmark function name we use: `benchmark_coredns_names_counter` which has all the
+used names in the `benchmark` label.
+
 Thus in the end leading to a dashboard where you can easily compare your performance against the
 *master* branch: <https://snapshot.raintank.io/dashboard/snapshot/0er0u40KAZ1YM4dl0KgDUkeD3KhzZqFj>
 
 {{< figure src="/images/grafana.png" title="Benchmark dashboard.">}}
+
+The end result of all this is that if someone adds an optimization it will be immediately visible
+in the stats. Any new pull request shows up automatically and any new benchmark function will also
+be automatically discovered by having the `benchmark_coredns_names_counter`.
