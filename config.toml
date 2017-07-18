@@ -28,3 +28,10 @@ theme = "hugo-zen"
   email = "jbelamaric@infoblox.com"
   twitter = "https://twitter.com/johnbelamaric"
   github = "https://github.com/johnbelamaric"
+
+[params.authors.chris]
+  name = "Chris O'Haver"
+  location = "Annapolis, MD"
+  email = "cohaver@infoblox.com"
+  twitter = "https://twitter.com/chrisohaver"
+  github = "https://github.com/chrisohaver"
